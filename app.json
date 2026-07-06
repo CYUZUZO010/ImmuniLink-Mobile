@@ -22,8 +22,14 @@
       "predictiveBackGestureEnabled": false
     },
     "web": {
+      "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "themeColor": "#E6F4FE",
+      "backgroundColor": "#ffffff",
+      "display": "standalone",
+      "shortName": "ImmuNiq",
+      "description": "Parent portal for student immunization registration and tracking."
     },
     "plugins": [
       "expo-router",
@@ -38,7 +44,10 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-secure-store",
+      "expo-localization",
+      "@react-native-community/datetimepicker"
     ],
     "experiments": {
       "typedRoutes": true,
